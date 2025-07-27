@@ -8,7 +8,7 @@ const ResumeSection = ({ id }) => (
           You can download my full resume in PDF format, or view a summary of my experience below.
         </p>
         <a
-          href="https://example.com/SURESH_BANOTH_Resume.pdf" // IMPORTANT: Replace with the actual URL to your hosted resume PDF
+          href="https://example.com/Suresh.Banoth.pdf" // IMPORTANT: Replace with the actual URL to your hosted resume PDF
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-colors duration-300 transform hover:scale-105 mb-12"
@@ -25,23 +25,31 @@ const ResumeSection = ({ id }) => (
           <h4 className="text-2xl font-bold text-indigo-700 mb-3">Professional Experience</h4>
           <ul className="list-disc list-inside text-gray-700 mb-6 space-y-4">
             <li>
-              <strong>Java Backend Developer Intern</strong> - Ameri Source INC (Jan 2024 - Jan 2025)
+              <strong>Java Backend Developer Intern</strong> - AmeriSource Inc, San Francisco, CA (Aug 2024 - Jan 2025)
               <ul className="list-disc list-inside ml-8 text-gray-600 space-y-1">
-                <li>Developed and optimized 6 Spring Boot microservices handling ~8K requests/day, with 92% unit test coverage using JUnit 5 & Mockito.</li>
-                <li>Integrated Kafka for asynchronous event processing, reducing order latency by 30 seconds.</li>
-                <li>Containerized services with Docker and deployed via AWS ECS Fargate, cutting onboarding time for new engineers by 50%.</li>
-                <li>Built CI/CD pipelines with GitHub Actions and Terraform, reducing manual deployment by 75%.</li>
-                <li>Implemented centralized logging and monitoring using ELK, Prometheus, and Grafana - reduced issue detection time from 15 to 3 minutes.</li>
+                <li>Led development of six Spring Boot microservices with DevOps teams, improving API reliability by 40%.</li>
+                <li>Implemented Apache Kafka for event-driven architecture, reducing order processing latency by 60%.</li>
+                <li>Deployed Dockerized microservices to AWS ECS Fargate, reducing DevOps onboarding time by 50%.</li>
+                <li>Streamlined infrastructure provisioning with Terraform and GitHub Actions, reducing deployment time by 75%.</li>
+                <li>Configured monitoring with Prometheus, Grafana, and ELK Stack, reducing MTTD by 80%.</li>
               </ul>
             </li>
             <li>
-              <strong>Java Backend Developer</strong> - Redington Group, India (Sep 2019 - Sep 2023)
+              <strong>Senior Java Backend Developer</strong> - Infosys Ltd, Hyderabad, India (Feb 2022 - Aug 2023)
               <ul className="list-disc list-inside ml-8 text-gray-600 space-y-1">
-                <li>Re-architected backend of a 12-microservice suite for inventory and order management, used by 30K+ daily users.</li>
-                <li>Led migration from Java 8 monolith to Spring Boot microservices on AWS, improving uptime to 99.95% and reducing infra cost by 25%.</li>
-                <li>Integrated OAuth2 and RBAC security measures, reducing unauthorized access by 90%.</li>
-                <li>Improved query performance by 40% with Redis caching, JPA optimization, and PostgreSQL tuning.</li>
-                <li>Conducted 100+ code reviews, mentored 4 junior developers, and promoted Agile/TDD culture.</li>
+                <li>Migrated monolithic applications to Spring Boot microservices, achieving 60% faster APIs and 40% less downtime.</li>
+                <li>Designed CI/CD pipelines using Jenkins and GitLab, reducing release cycle from three days to under 12 hours.</li>
+                <li>Presented PostgreSQL optimization results to stakeholders, reducing response time from 200ms to 100ms.</li>
+                <li>Mentored and guided three junior developers on microservices architecture through weekly code reviews.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Java Backend Developer</strong> - Redington Group, Hyderabad, India (Sep 2019 - Jan 2022)
+              <ul className="list-disc list-inside ml-8 text-gray-600 space-y-1">
+                <li>Collaborated closely with product teams to modernize legacy systems, achieving 99.95% uptime.</li>
+                <li>Transitioned backend infrastructure to AWS EC2 and RDS, reducing operational costs by 28%.</li>
+                <li>Boosted REST API throughput by 40% via Redis caching and SQL optimization, supporting 2,000+ users.</li>
+                <li>Coordinated OAuth2 and RBAC authentication implementation, reducing unauthorized access attempts by 90%.</li>
               </ul>
             </li>
           </ul>
@@ -49,15 +57,16 @@ const ResumeSection = ({ id }) => (
           <h4 className="text-2xl font-bold text-indigo-700 mb-3">Education</h4>
           <ul className="list-disc list-inside text-gray-700 mb-6 space-y-2">
             <li>
-              <strong>M.S., Information Technology & Management</strong> - Golden Gate University (Sep 2023 - Apr 2025)
+              <strong>M.S., Information Technology & Management</strong> - Golden Gate University, San Francisco, CA (Sep 2023 - Apr 2025)
               <ul className="list-disc list-inside ml-8 text-gray-600">
-                <li>Achievements: Dean's List</li>
+                <li>GPA: $3.93/4.0$, Dean's List</li>
+                <li>Relevant Coursework: Cloud Computing, Software Architecture, Database Management</li>
               </ul>
             </li>
             <li>
-              <strong>B.Tech, Electronics & Communication Engineering</strong> - Indian Institute of Information Technology, Allahabad (Jun 2015 - Sep 2019)
+              <strong>B.Tech, Electronics & Communication Engineering</strong> - Indian Institute of Information Technology (IIIT) Allahabad, Allahabad, India (Jun 2015 - Sep 2019)
               <ul className="list-disc list-inside ml-8 text-gray-600">
-                <li>Achievements: Honors Graduate</li>
+                <li>Honors Graduate</li>
               </ul>
             </li>
           </ul>
@@ -65,21 +74,34 @@ const ResumeSection = ({ id }) => (
           <h4 className="text-2xl font-bold text-indigo-700 mb-3">Project Highlights</h4>
           <ul className="list-disc list-inside text-gray-700 mb-6 space-y-2">
             <li>
-              <strong>BookBazaar - Full Stack Book Inventory Platform</strong>
+              <strong>Auth-System</strong> - Java, Spring Boot, MySQL, React, Docker (Mar 2025 - Present)
               <ul className="list-disc list-inside ml-8 text-gray-600">
-                <li>Built RESTful APIs using layered architecture and integrated Spring Security and H2 database for testing.</li>
-                <li>Achieved 100% test pass rate across 20+ automated integration tests.</li>
+                <li>Built full-stack authentication system with JWT supporting 10,000+ users, reducing login response time by 65%.</li>
+                <li>Amplified backend performance by 80% via multithreading and pagination for 100,000+ records.</li>
+                <li>Constructed scalable file upload system with Excel import using OpenCSV, reducing manual entry by 90%.</li>
+                <li>Integrated Swagger docs, Postman tests, and Actuator health checks, improving API coverage by 100%.</li>
+                <li>Deployed Dockerized backend to Railway and React frontend to Vercel with 99.8% deployment success rate.</li>
               </ul>
             </li>
             <li>
-              <strong>React E-Commerce App</strong>
+              <strong>Portfolio Website</strong> - React, Tailwind CSS, Vercel (Apr 2025 - Present)
               <ul className="list-disc list-inside ml-8 text-gray-600">
-                <li>Developed a responsive front end for 100+ products with Firebase Authentication and Redux Toolkit.</li>
-                <li>Achieved average load time of 0.8 seconds and a 97/100 Lighthouse performance score.</li>
+                <li>Created responsive portfolio with React hooks and CSS Grid, achieving 98+ Lighthouse score.</li>
+                <li>Launched to Vercel with GitHub Actions CI/CD, maintaining sub-3s load times and optimal performance.</li>
               </ul>
             </li>
           </ul>
   
+          <h4 className="text-2xl font-bold text-indigo-700 mb-3">Technical Skills & Tools</h4>
+          <ul className="list-disc list-inside text-gray-700 mb-6 space-y-2">
+            <li><strong>Programming Languages:</strong> Java, Python, TypeScript</li>
+            <li><strong>Frameworks & Libraries:</strong> Spring Boot, Spring Cloud, Hibernate, JPA, React</li>
+            <li><strong>Cloud Platforms:</strong> AWS (EC2, RDS, ECS Fargate), Docker, Kubernetes</li>
+            <li><strong>DevOps & CI/CD:</strong> Terraform, GitHub Actions, Jenkins, GitLab Pipelines</li>
+            <li><strong>Databases & Streaming:</strong> PostgreSQL, MySQL, MongoDB, Redis, Apache Kafka, RabbitMQ</li>
+            <li><strong>Monitoring & Testing:</strong> Prometheus, Grafana, JUnit, Mockito, SonarQube</li>
+          </ul>
+
           <h4 className="text-2xl font-bold text-indigo-700 mb-3">Certifications</h4>
           <ul className="list-disc list-inside text-gray-700 space-y-2">
             <li>Oracle Certified Java SE 11 Developer 2023</li>
@@ -91,5 +113,5 @@ const ResumeSection = ({ id }) => (
         </div>
       </div>
     </section>
-  );
-export default ResumeSection  
+);
+export default ResumeSection;
